@@ -1,6 +1,4 @@
-table {     border: solid;
-            border-width: 2 px;
-            width: 50%;
+table {     width: 50%;
             text-align: center;
             border-spacing: 0;
             border-collapse: collapse;
@@ -8,7 +6,6 @@ table {     border: solid;
     }
     
     tr, td { border: double;
-             border-width: 2 px;
     }  
     
     
