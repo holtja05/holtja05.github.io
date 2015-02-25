@@ -8,7 +8,10 @@ table {     border: solid;
     }
     
     tr, td { border: double;
-                 border-width: 2 px;
+             border-width: 2 px;
     }  
+    
+    caption { font: cursive;
+    }
     
 
