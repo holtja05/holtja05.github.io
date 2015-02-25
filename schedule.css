@@ -8,5 +8,9 @@ table {     width: 50%;
     tr, td { border: double;
     }  
     
+    .mgt { background-color: #BFFFEA;
+    }
+    
+    
     
 
