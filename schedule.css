@@ -1,6 +1,4 @@
-<head>  
-  <style>
-    table { border-style: solid;
+table { border-style: solid;
             border-width: 1 px;
             width: 100%;
             text-align: center;
@@ -11,6 +9,3 @@
     th, tr, td { border-style: solid;
                  border-width: 1 px;
     }    
-    
-  </style> 
-</head>
