@@ -1,4 +1,4 @@
-table {     border: solid;
+table, tr, td {     border: solid;
             border-width: 2 px;
             width: 50%;
             text-align: center;
