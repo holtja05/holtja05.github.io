@@ -4,7 +4,8 @@ table {     border: solid;
             text-align: center;
             border-spacing: 0;
             border-collapse: collapse;
-            color: pink;
+            color: black;
+            border-style: dotted;
     }
     
     tr, td { border: solid;
