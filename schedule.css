@@ -5,10 +5,9 @@ table {     border: solid;
             border-spacing: 0;
             border-collapse: collapse;
             color: black;
-            border-style: double;
     }
     
-    tr, td { border: solid;
+    tr, td { border: double;
                  border-width: 2 px;
     }    
 
