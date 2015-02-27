@@ -1,12 +1,17 @@
-table {     width: 50%;
-            text-align: center;
-            border-spacing: 0;
-            border-collapse: collapse;
-            color: black;
+    table {     width: 50%;
+                text-align: center;
+                border-spacing: 0;
+                border-collapse: collapse;
+                color: black;
     }
     
-    tr, td { border: double;
+    tr, td { 
+            border: double;
     }  
+    
+    .mgt351 { 
+            color: blue;
+    } 
 
     
     
