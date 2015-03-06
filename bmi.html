@@ -3,18 +3,20 @@
     <title>BMI Calculator</title>
   </head>
   <body>
+    <label for = "thebox">Weight</label>
     <input type = "text" id="thebox">
-    <label for = "thebox">Name</label>
-    <button onlick = "hello();">Click Me</button>
+    <label for = "thebox2">Height</label>
+    <input type = "text" id="thebox2">
+    <button onlick = "convert();">Convert</button>
     <h1 id = "output"></h1>
     
     <script>
       hello = function(){
         thebox = document.querySelector("#thebox");
-        myname = thebox.value;
-        alert(myname);
+        conversion = thebox.value;
+        alert("conversion");
         theh1 = document.querySelector("#output");
-        thehl.innerHTML = "Hello" + " " + myname;
+        thehl.innerHTML = "Result:" + " " + "conversion";
       }
     </scipt>
   </body>
