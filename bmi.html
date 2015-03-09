@@ -5,9 +5,9 @@
   
   <body>
     <h1 id="Firstheading">BMI Calculator</h1>
-    <Label for ="thebox">Weight</Label>
-    <input type="text" id="thebox">
-    <label for="thebox2">Height</label>
+    <Label for ="slider">Weight</Label>
+    <input type="range" min=-100 max=400 id="slider" onmousemove="findbmi();"value=0>
+    <label for="slider">Height</label>
     <input type="text" id="thebox2">
     <button onlick="hello();">Calculate</button>
     <h3 id="output"></h3>
