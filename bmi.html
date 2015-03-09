@@ -4,8 +4,8 @@
   </head>
   
   <body>
-    <h1>BMI Calculator</h1>
-    <label for ="thebox">Weight</label>
+    <h1 id="Firstheading">BMI Calculator</h1>
+    <Label for ="thebox">Weight</Label>
     <input type="text" id="thebox">
     <label for="thebox2">Height</label>
     <input type="text" id="thebox2">
@@ -21,13 +21,15 @@
         height = thebox2.value;
         theh1 = document.querySelector("#output");
         theh1.innerHTML = "Your BMI is" + (weight*703)/(height*height);
+        Fh1 = document.querySelector("#Firstheading");
+        
       }
       
       document.body.style.backgroundColor = "#B2FFE5";
       
-      h1 = document.querySelector("#Firstheading");
-      h1.style.textAlign = "center";
-      h1.style.fontSize = "26px";
+      Fh1 = document.querySelector("#Firstheading");
+      Fh1.style.textAlign = "center";
+      Fh1.style.fontSize = "26px";
       
     </script>
   </body>
