@@ -5,21 +5,21 @@
   
   <body>
   
-    <label for = "thebox">Weight</label>
-    <input type = "text" id="thebox">
-    <label for = "thebox2">Height</label>
-    <input type = "text" id="thebox2">
-    <button onlick = "hello();">Calculate</button>
-    <h3 id = "output"></h3>
+    <label for ="thebox">Weight</label>
+    <input type="text" id="thebox">
+    <label for="thebox2">Height</label>
+    <input type="text" id="thebox2">
+    <button onlick="hello();">Calculate</button>
+    <h3 id="output"></h3>
     
     <script>
-      hello = function(){
+      hello=function(){
         
-        thebox = document.querySelector("#thebox");
+        thebox=document.querySelector("#thebox");
         weight = thebox.value;
         thebox2 = document.querySelector("#thebox2");
-        height = thebox.value;
-        theh1 = document.querySelector("#output")
+        height = thebox2.value;
+        theh1 = document.querySelector("#output");
         theh1.innerHTML = "Your BMI is" + (weight*703)/(height*height);
       }
       
