@@ -6,14 +6,13 @@
   <body>
     <h1 id="Firstheading">BMI Calculator</h1>
     <Label for ="slider">Weight</Label>
-    <input type="range" min=-100 max=400 id="slider" onmousemove="findbmi();"value=0>
+    <input type="range" min=0 max=400 id="slider" onmousemove="findweight();"value=0>
     <label for="slider">Height</label>
-    <input type="text" id="thebox2">
-    <button onlick="hello();">Calculate</button>
-    <h3 id="output"></h3>
+    <input type="range" min=0 max=400 id="slider" onmousemove="findheight();"value=0>
+    <h2 id="findbmi">BMI: </h2>
     
     <script>
-      hello=function(){
+      findbmi=function(){
         
         thebox=document.querySelector("#thebox");
         weight = thebox.value;
