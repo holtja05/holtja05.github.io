@@ -9,18 +9,22 @@
     <input type="range" min=0 max=400 id="slider" onmousemove="findweight();"value=0>
     <label for="slider">Height</label>
     <input type="range" min=0 max=400 id="slider" onmousemove="findheight();"value=0>
-    <h2 id="findbmi">BMI: </h2>
+    <h2 id="findweight">Weight: 0</h2>
+    <h2 id="findheight">Height: 0</h2>
     
     <script>
       findbmi=function(){
+        theslider=document.querySelector("#slider");
+        w=theslider.value;
+        bmi=(weight*703)/(height*height);
         
-        thebox=document.querySelector("#thebox");
-        weight = thebox.value;
-        thebox2 = document.querySelector("#thebox2");
-        height = thebox2.value;
-        theh1 = document.querySelector("#output");
-        theh1.innerHTML = "Your BMI is" + (weight*703)/(height*height);
+
+        wh2 = document.querySelector("#findweight");
+        hh2 = document.querySelector("#findheight");
         Fh1 = document.querySelector("#Firstheading");
+        
+        wh2.innerHTML="Weight: 0" + w;
+        hh2.innerHTML="Height: 0" + h;
         
       }
       
