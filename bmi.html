@@ -5,24 +5,22 @@
   
   <body>
   
-    <h1 id="Firstheading">BMI Calculator</h1>
     <label for = "thebox">Weight</label>
     <input type = "text" id="thebox">
     <label for = "thebox2">Height</label>
     <input type = "text" id="thebox2">
-    <button onlick = "convert();">Convert</button>
-    <h2 id = "output"></h2>
+    <button onlick = "hello();">Calculate</button>
+    <h3 id = "output"></h3>
     
     <script>
-      convert = function(){
-        var calculate;
-        BMI = (weight * 703)/(height * height)
+      hello = function(){
         
         thebox = document.querySelector("#thebox");
-        calculate = thebox.value;
-        alert(calculate);
-        theh2 = document.querySelector("#output");
-        theh2.innerHTML = "Result:" + " " + calculate;
+        weight = thebox.value;
+        thebox2 = document.querySelector("#thebox2");
+        height = thebox.value;
+        theh1 = document.querySelector("#output")
+        theh1.innerHTML = "Your BMI is" + (weight*703)/(height*height);
       }
       
       document.body.style.backgroundColor = "#B2FFE5";
