@@ -2,24 +2,20 @@
   <head>
     <title>Temperature Conversion</title>
   </head>
-  <body>
   
-    <h1 id="Firstheading">Temperature Conversion</h1>
+  <body>
     <label for = "thebox">Celsius</label>
     <input type = "text" id="thebox">
-    <button onlick = "convert();">Convert</button>
-    <h2 id = "output"></h2>
+    <button onlick = "hello();">Convert</button>
+    <h3 id ="temp"></h3>
     
     <script>
-      convert = function(){
-        var calculate;
-        calculate = "output"*1.8+32;
-        
+      hello=function(){
+
         thebox = document.querySelector("#thebox");
-        calculate = thebox.value;
-        alert(calculate);
-        theh2 = document.querySelector("#output");
-        theh2.innerHTML = "Result:" + " " + calculate;
+        temperature = thebox.value;
+        theh1 = document.querySelector("#temp");
+        theh1.innerHTML = temperature*1.8+32 + "°F"
       }
       
       document.body.style.backgroundColor = "wheat";
