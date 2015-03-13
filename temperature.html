@@ -16,6 +16,7 @@
         
         <h2 id="degreesc">Degrees C: 0</h2>
         <h2 id="degreesf">Degrees F: 32</h2>
+        <h2 id="message"></h2>
         
     <script>
             changetemp = function() {
@@ -29,6 +30,24 @@
                 
                 ch2.innerHTML="Degrees C: " + c;
                 fh2.innerHTML="Degrees F: " + f;
+                
+                 if (f>90) {
+                    message=document.querySelector("#message");
+                    message.innerHTML="Too Hot";
+                    document.body.style.color="red";
+                }       
+                
+                if (f<5) {
+                    message=document.querySelector("#message");
+                    message.innerHTML="Too Cold";
+                    document.body.style.backgroundColor="blue";
+                }
+                
+                if (f>=5 && f<=90) {
+                    message=document.querySelector("#message");
+                    message.innerHTML="Ok";
+                    document.body.style.backgroundColor="yellow";
+                }
                 
             }
       
