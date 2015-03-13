@@ -37,6 +37,26 @@
  </head> 
   
  <body>
-   
+   <script>
+            
+            increment = function(){
+
+                thelist = document.querySelector("#out");
+                
+                lc = thelist.lastChild
+                firstnumber = lc.innerHTML;
+                ps = lc.previousSibling;
+                secondnumber = ps.innerHTML;
+                
+                nextnumber = parseInt(firstnumber) + parseInt(secondnumber);
+                
+                
+                newitem = document.createElement("li");
+                newitem.innerHTML=nextnumber;
+                thelist.appendChild(newitem);
+    
+            }
+            
+        </script>
  </body>
 </html>
