@@ -31,18 +31,18 @@
         Fh1 = document.querySelector("#Firstheading");
         
         if (bmi>24) {
-              themessage=document.querySelector("#themessage");
-              themessage.innerHTML="High";
+              message=document.querySelector("#message");
+              message.innerHTML="High";
               document.body.style.backgroundColor="red";
             }
             if (bmi<19) {
-              themessage=document.querySelector("#themessage");
-              themessage.innerHTML="Low";
+              message=document.querySelector("#message");
+              message.innerHTML="Low";
               document.body.style.backgroundColor="blue";
             }
             if (bmi>=19 && bmi<=24) {
-              themessage=document.querySelector("#themessage");
-              themessage.innerHTML="OK";
+              message=document.querySelector("#message");
+              message.innerHTML="OK";
               document.body.style.backgroundColor="yellow";
             }
         
