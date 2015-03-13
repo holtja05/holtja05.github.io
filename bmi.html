@@ -5,10 +5,10 @@
   
   <body>
     <h1 id="Firstheading">BMI Calculator</h1>
-    <Label for ="sliderA">Height (in inches)</Label>
-    <input type="range" min=0 max=100 id="sliderA" onmousemove="hello();"value=0>
-    <label for="sliderB">Weight (in lbs)</label>
-    <input type="range" min=0 max=400 id="sliderB" onmousemove="hello();"value=0>
+    <Label for ="slidera">Height (in inches)</Label>
+    <input type="range" min=0 max=100 id="slidera" onmousemove="hello();"value=0>
+    <label for="sliderb">Weight (in lbs)</label>
+    <input type="range" min=0 max=400 id="sliderb" onmousemove="hello();"value=0>
     <h2 id="heightoutput">Height: 0</h2>
     <h2 id="weightoutput">Weight: 0</h2>
     <h2 id="output"></h2>
@@ -16,10 +16,10 @@
     
     <script>
       hello=function(){
-        sliderA=document.querySelector("#sliderA");
-        height=sliderA.value;
-        sliderB=document.querySelector("#sliderB");
-        weight=sliderB.value;
+        slidera=document.querySelector("#slidera");
+        height=slidera.value;
+        sliderb=document.querySelector("#sliderb");
+        weight=sliderb.value;
         
         heighth2.innerHTML="Height: " + height;
         weighth2.innerHTML="Weight: " + weight;
