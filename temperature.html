@@ -34,19 +34,19 @@
                  if (f>90) {
                     message=document.querySelector("#message");
                     message.innerHTML="Too Hot";
-                    document.body.style.text.color="red";
+                    document.body.style.backgroundColor="red";
                 }       
                 
                 if (f<5) {
                     message=document.querySelector("#message");
                     message.innerHTML="Too Cold";
-                    document.body.style.textColor="blue";
+                    document.body.style.font="blue";
                 }
                 
                 if (f>=5 && f<=90) {
                     message=document.querySelector("#message");
                     message.innerHTML="Ok";
-                    document.body.style.textColor="yellow";
+                    document.body.style.backgroundColor="yellow";
                 }
                 
             }
