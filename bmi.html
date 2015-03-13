@@ -5,16 +5,22 @@
   
   <body>
     <h1 id="Firstheading">BMI Calculator</h1>
-    <Label for ="slider">Weight</Label>
-    <input type="range" min=0 max=400 id="slider" onmousemove="findweight();"value=0>
-    <label for="slider">Height</label>
-    <input type="range" min=0 max=400 id="slider" onmousemove="findheight();"value=0>
-    <h2 id="findweight">Weight: 0</h2>
-    <h2 id="findheight">Height: 0</h2>
+    <Label for ="slider">Height (in inches)</Label>
+    <input type="range" min=0 max=100 id="slider" onmousemove="hello();"value=0>
+    <label for="slider">Weight (in lbs)</label>
+    <input type="range" min=0 max=400 id="slider" onmousemove="hello();"value=0>
+    <h2 id="heightoutput">Height: 0</h2>
+    <h2 id="weightoutput">Height: 0</h2>
+    <h2 id="output"></h2>
+    <h2 id="message"></h2>
     
     <script>
-      findbmi=function(){
-        theslider=document.querySelector("#slider");
+      hello=function(){
+        slider=document.querySelector("#slider");
+        height=slider.value;
+        slider=document.querySelector("#slider");
+        weight=slider.value;
+        
         w=theslider.value;
         bmi=(weight*703)/(height*height);
         
