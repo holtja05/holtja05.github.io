@@ -33,7 +33,8 @@
             background-color: wheat;
     }
     
-    caption {
+    h1 {
+            text-align: center;
             font-size: 26px;
     }
     
