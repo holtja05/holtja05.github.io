@@ -48,7 +48,10 @@
             }
             
             select = function(){
+                if (this.checked)
                 this.parentNode.classList.add("makered");
+                else
+                    this.parentNode.classList.remove("makered");
             }
             
                 
