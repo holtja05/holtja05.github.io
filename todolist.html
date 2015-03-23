@@ -1,5 +1,6 @@
 <html>
     <head>
+        <title>To Do List</title>
         <style>
             li {
                 list-style-type: none;
@@ -10,11 +11,16 @@
             .makered {
                 color: red;
             }
+            
+            h1 {
+                font-size: 26px;
+            }
                 
         </style>       
                 
     </head>
     <body>
+        <h1>To Do List</h1>
         <button onclick="increment();">Click Me</button>
         <ul id="out">
         
@@ -38,6 +44,7 @@
             select = function(){
                 this.classList.add("makered");
             }
+            
                 
         </script>
         
