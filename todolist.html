@@ -31,6 +31,8 @@
             var count = 0; 
             
             increment = function() {
+                
+                item=document.querySelector("#item").value;
                 count = count + 1;
                 output = document.querySelector("#out");
                 newli = document.createElement("li");
@@ -43,8 +45,9 @@
                 
                 cb.onclick=select;
                 
-                
                 out.appendChild(newli);
+                
+                item.value="";
             }
             
             select = function(){
@@ -58,7 +61,7 @@
         </script>
         
         <label>Item</label>
-        <input type="text" size="30">
+        <input type="text" size="30" id="item">
         
         <p></p><button onclick="increment();">Add Item</button>
         <button onclick="emptystring();">Clear</button>
