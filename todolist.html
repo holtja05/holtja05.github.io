@@ -1,1 +1,46 @@
+<html>
+    <head>
+        <style>
+            li {
+                list-style-type: none;
+                font-family: fantasy;
+                font-size: 24px;
+            }
+            
+            .makered {
+                color: red;
+            }
+                
+        </style>       
+                
+    </head>
+    <body>
+        <button onclick="increment();">Click Me</button>
+        <ul id="out">
+        
+        
+        <script>
+            
+            var count = 0; 
+            
+            increment = function() {
+                count = count + 1;
+                output = document.querySelector("#out");
+                newli = document.createElement("li");
+                newli.innerHTML = count;
+                
+                newli.onclick=select;
+                
+                
+                out.appendChild(newli);
+            }
+            
+            select = function(){
+                this.classList.add("makered");
+            }
+                
+        </script>
+        
+    </body>
+</html>
 
