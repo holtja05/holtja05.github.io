@@ -24,30 +24,31 @@
     <body>
         <h1>To Do List</h1>
         <ul id="out">
+              
+        <label>Item</label>
+        <input type="text" size="30" id="item">
         
+        <p></p><button onclick="addtodo();">Add Item</button>
+        <button onclick="emptystring();">Clear</button>  
         
         <script>
             
             var count = 0; 
             
-            increment = function() {
-                
-                item=document.querySelector("#item").value;
-                count = count + 1;
+            addtodo = function() {
+                todo=document.querySelector("#item").value;
                 output = document.querySelector("#out");
                 newli = document.createElement("li");
                 
                 cb = document.createElement("input");
                 cb.type="checkbox";
                 newli.appendChild(cb);
-                te = document.createTextNode(count);
+                te = document.createTextNode(todo);
                 newli.appendChild(te);
                 
                 cb.onclick=select;
                 
                 out.appendChild(newli);
-                
-                item.value="";
             }
             
             select = function(){
@@ -57,15 +58,14 @@
                     this.parentNode.classList.remove("makered");
             }
             
+            clear = function() {
+                out = document.querySelector("#out");
+                out.innerHTML="";
+            }
+            
             document.body.style.backgroundColor = "#FFFF99";    
+            
         </script>
-        
-        <label>Item</label>
-        <input type="text" size="30" id="item">
-        
-        <p></p><button onclick="increment();">Add Item</button>
-        <button onclick="emptystring();">Clear</button>
-        
     </body>
 </html>
 
