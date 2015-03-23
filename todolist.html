@@ -34,16 +34,21 @@
                 count = count + 1;
                 output = document.querySelector("#out");
                 newli = document.createElement("li");
-                newli.innerHTML = count;
                 
-                newli.onclick=select;
+                cb = document.createElement("input");
+                cb.type="checkbox";
+                newli.appendChild(cb);
+                te = document.createTextNode(count);
+                newli.appendChild(te);
+                
+                cb.onclick=select;
                 
                 
                 out.appendChild(newli);
             }
             
             select = function(){
-                this.classList.add("makered");
+                this.parentNode.classList.add("makered");
             }
             
                 
